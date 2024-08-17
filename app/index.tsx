@@ -9,9 +9,12 @@ const produtos = [
   { id: 4, nome: "Guaraná Antártica", preco: 8.5 },
 ];
 
-const [count, setCount] = useState(0);
 
-export default function Index() {  
+
+
+export default function Index() {
+
+  let [count, setCount] = useState(0);
 
   return (
     <View
@@ -24,19 +27,19 @@ export default function Index() {
         </View>
       ))}
 
-      <Button title={ count > 0 ? `Clicado ${count} vezes` : "CU"} onPress={() => contador}></Button>
+      <Button title={`Clicado ${count} vezes`} onPress={contador}></Button>
       <Button title={`Resetar`} onPress={() => setCount(0)}></Button>
 
     </View>
 
+    
+
   )
+
+  function contador() {
+    setCount(count + 1)
+  }
 };
-
-function contador(){
-  setCount(count + 1)  
-}
-
-
 const estilo = StyleSheet.create({
   container: {
     flex: 1,
