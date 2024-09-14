@@ -34,7 +34,7 @@ const Styles = StyleSheet.create({
     },
     list: {
         paddingHorizontal: 16, // Para dar uma margem nas laterais
-        width: '100%'    
+        width: '100%'
     },
     image: {
         width: 150,
@@ -43,7 +43,7 @@ const Styles = StyleSheet.create({
     },
     input: {
         width: '100%', // Largura total do contêiner pai
-        maxWidth: 300, // Largura máxima
+        //maxWidth: 300, // Largura máxima
         height: 50, // Altura do campo de texto
         paddingHorizontal: 15, // Espaçamento horizontal interno
         paddingVertical: 10, // Espaçamento vertical interno
@@ -53,6 +53,11 @@ const Styles = StyleSheet.create({
         backgroundColor: '#fff', // Cor de fundo
         fontSize: 16, // Tamanho da fonte
         color: '#333', // Cor do texto
+    },
+    label: {
+        fontSize: 20,
+        color: '#444',
+        textAlign: 'justify',
     }
 });
 
